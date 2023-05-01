@@ -1,4 +1,3 @@
-import React from "react";
 import { Forecast } from "./pages";
 import { ThemeProvider } from "@mui/material";
 import { defaultTheme } from "./context";
