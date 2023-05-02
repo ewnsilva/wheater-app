@@ -1,8 +1,14 @@
 import { Box, Typography } from "@mui/material";
 
-const Search = () => {
-  const test = "Teste";
+import { descriptionCode } from "utils";
 
+type SearchParams = {
+  city: string;
+  temperature?: number;
+  wheatherStatus?: number;
+};
+
+const Search = ({ temperature, wheatherStatus }: SearchParams) => {
   return (
     <Box
       sx={{
@@ -15,7 +21,14 @@ const Search = () => {
         marginBottom: 25,
       }}
     >
-      <Typography color="white">{test}</Typography>
+      <Box padding={2}>
+        <Typography color="white" marginBottom={5}>
+          Temperatura: {temperature?.toFixed()} ºC
+        </Typography>
+        <Typography color="white" marginBottom={5}>
+          Clima: {descriptionCode(wheatherStatus)}
+        </Typography>
+      </Box>
     </Box>
   );
 };
