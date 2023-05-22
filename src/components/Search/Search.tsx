@@ -8,7 +8,7 @@ type SearchParams = {
   wheatherStatus?: number;
 };
 
-const Search = ({ temperature, wheatherStatus }: SearchParams) => {
+const Search = ({ temperature, wheatherStatus, city }: SearchParams) => {
   return (
     <Box
       sx={{
@@ -22,6 +22,9 @@ const Search = ({ temperature, wheatherStatus }: SearchParams) => {
       }}
     >
       <Box padding={2}>
+        <Typography color="white" marginBottom={5}>
+          {city}
+        </Typography>
         <Typography color="white" marginBottom={5}>
           Temperatura: {temperature?.toFixed()} ºC
         </Typography>

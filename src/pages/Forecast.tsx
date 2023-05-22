@@ -1,7 +1,9 @@
 import { useCallback, useEffect, useState } from "react";
-import { Box, SelectChangeEvent, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { Options, Search } from "components";
 import { useAxios } from "hooks";
+
+import { DisplayPc } from "assets";
 
 type WheatherProps = {
   temperature: number;
@@ -18,6 +20,7 @@ export const Forecast = () => {
   const [localization, setLocalization] = useState<LocalizationProps>();
   const [wheather, setWheather] = useState<WheatherProps>();
   const [city, setCity] = useState("");
+  const [selectedCity, setSelectedCity] = useState("");
 
   const changeCity = (event: React.ChangeEvent<HTMLInputElement>) => {
     setCity(event.target.value);
@@ -25,7 +28,7 @@ export const Forecast = () => {
 
   const localizationSearch = useCallback(
     (city: string) => {
-      const url = " https://nominatim.openstreetmap.org/search?";
+      const url = "https://nominatim.openstreetmap.org/search?";
       const params = { city, format: "json" };
 
       api
@@ -36,7 +39,7 @@ export const Forecast = () => {
           setLocalization(data[0]);
         });
     },
-    [api, localization]
+    [api]
   );
 
   const wheatherSearch = useCallback(
@@ -57,6 +60,7 @@ export const Forecast = () => {
 
   const onSubmit = () => {
     localizationSearch(city);
+    setSelectedCity(city);
   };
 
   useEffect(() => {
@@ -70,8 +74,8 @@ export const Forecast = () => {
         gridTemplateColumns: "1fr",
         rowGap: 20,
         height: "700px",
-        width: "320px",
-        backgroundColor: `blue`,
+        width: "342px",
+        backgroundImage: `url(${DisplayPc})`,
         textAlign: "center",
       }}
     >
@@ -87,7 +91,7 @@ export const Forecast = () => {
       <Options handleChange={changeCity} handleClick={onSubmit} />
 
       <Search
-        city={city}
+        city={selectedCity}
         temperature={wheather?.temperature}
         wheatherStatus={wheather?.weathercode}
       />
