@@ -14,13 +14,21 @@ export const Options = ({ handleChange, handleClick }: OptionParams) => {
 
   return (
     <Box sx={{ display: "grid", margin: 2, rowGap: 2 }}>
-      <FormControl>
+      <FormControl sx={{ color: "white" }}>
         <TextField
           fullWidth
           onKeyDown={handleKeyDown}
           label="Cidade"
           onChange={handleChange}
-          sx={{ background: "#ffffff" }}
+          variant="filled"
+          color="secondary"
+          sx={{
+            background: "transparent",
+            fontWeight: "bold",
+            border: "2px solid white",
+            borderRadius: "8px",
+            color: "white",
+          }}
         />
       </FormControl>
       <Button variant="contained" onClick={handleClick}>

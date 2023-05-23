@@ -4,16 +4,16 @@ import { red, grey } from "@mui/material/colors";
 export const defaultTheme = createTheme({
   palette: {
     primary: {
-      main: red[400],
-      dark: red[600],
+      main: "#ffffff",
+      dark: grey[300],
       light: red[200],
-      contrastText: "#ffffff",
+      contrastText: "black",
     },
     secondary: {
-      main: grey[500],
+      main: "#ffffff",
       dark: grey[700],
       light: grey[300],
-      contrastText: "#ffffff",
+      contrastText: "white",
     },
     background: {
       default: "#f7f6f3",
@@ -21,6 +21,9 @@ export const defaultTheme = createTheme({
   },
   typography: {
     fontFamily: "arial",
+    h1: {
+      color: "#ffffff",
+    },
     h2: {
       color: "#ffffff",
       alignItems: "center",
@@ -28,7 +31,7 @@ export const defaultTheme = createTheme({
       alignContent: "center",
     },
     body1: {
-      color: "black",
+      color: "#ffffff",
     },
     body2: {
       color: "#ffffff",
