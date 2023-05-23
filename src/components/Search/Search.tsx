@@ -1,6 +1,7 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, CardMedia, Card } from "@mui/material";
+import { ClearSky } from "assets";
 
-import { descriptionCode } from "utils";
+import { descriptionCode, representativeImg } from "utils";
 
 type SearchParams = {
   city: string;
@@ -22,15 +23,24 @@ const Search = ({ temperature, wheatherStatus, city }: SearchParams) => {
       }}
     >
       <Box padding={2}>
-        <Typography color="white" marginBottom={5}>
-          {city}
-        </Typography>
-        <Typography color="white" marginBottom={5}>
-          Temperatura: {temperature?.toFixed()} ºC
-        </Typography>
-        <Typography color="white" marginBottom={5}>
-          Clima: {descriptionCode(wheatherStatus)}
-        </Typography>
+        <Box>
+          <Typography color="white" fontSize={20} fontWeight="bold">
+            {city}
+          </Typography>
+        </Box>
+        {temperature && (
+          <Box display="flex" textAlign="center" alignItems="flex-start">
+            <Typography color="white" marginTop={2} fontSize={35}>
+              {temperature?.toFixed()} ºC
+            </Typography>
+            <CardMedia
+              component="img"
+              image={representativeImg(wheatherStatus)}
+              sx={{ maxWidth: 180 }}
+            />
+          </Box>
+        )}
+        <Typography color="white">{descriptionCode(wheatherStatus)}</Typography>
       </Box>
     </Box>
   );
