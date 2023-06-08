@@ -1,6 +1,8 @@
 import DisplayPc from "./background/displayPc.png";
 import DisplayMobile from "./background/displayMobile.png";
 import DisplayTablet from "./background/displayTablet.png";
+import Background from "./background/background.jpg";
+import BackgroundMobile from "./background/backgroundMobile.jpg";
 
 import ClearSky from "./imgs/clearSky.png";
 import ColdRain from "./imgs/coldRain.png";
@@ -16,6 +18,8 @@ export {
   DisplayMobile,
   DisplayPc,
   DisplayTablet,
+  Background,
+  BackgroundMobile,
   ClearSky,
   ColdRain,
   Fog,
