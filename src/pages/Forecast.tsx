@@ -109,7 +109,7 @@ export const Forecast = () => {
             fontFamily="Iceland"
             fontSize={80}
           >
-            Wheather App
+            Weather App
           </Typography>
         </Box>
 
