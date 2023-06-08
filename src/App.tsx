@@ -2,7 +2,7 @@ import { Forecast } from "./pages";
 import { ThemeProvider } from "@mui/material";
 import { defaultTheme } from "./context";
 
-const App = (): JSX.Element => { 
+const App = (): JSX.Element => {
   return (
     <ThemeProvider theme={defaultTheme}>
       <Forecast />
@@ -10,4 +10,4 @@ const App = (): JSX.Element => {
   );
 };
 
-export default App
+export default App;
