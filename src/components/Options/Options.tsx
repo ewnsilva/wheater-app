@@ -13,21 +13,20 @@ export const Options = ({ handleChange, handleClick }: OptionParams) => {
   };
 
   return (
-    <Box sx={{ display: "grid", margin: 2, rowGap: 2 }}>
-      <FormControl sx={{ color: "white" }}>
+    <Box display="flex" flexDirection="column" width="314px" rowGap={2}>
+      <FormControl>
         <TextField
           fullWidth
           onKeyDown={handleKeyDown}
-          label="Cidade"
+          label={<b>Insira sua cidade</b>}
           onChange={handleChange}
           variant="filled"
           color="secondary"
           sx={{
-            background: "transparent",
+            backgroundColor: "#FFFFFF",
             fontWeight: "bold",
-            border: "2px solid white",
             borderRadius: "8px",
-            color: "white",
+            color: "black",
           }}
         />
       </FormControl>

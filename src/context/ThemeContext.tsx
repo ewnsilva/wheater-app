@@ -10,10 +10,10 @@ export const defaultTheme = createTheme({
       contrastText: "black",
     },
     secondary: {
-      main: "#ffffff",
+      main: "black",
       dark: grey[700],
       light: grey[300],
-      contrastText: "white",
+      contrastText: "black",
     },
     background: {
       default: "#f7f6f3",
@@ -31,10 +31,10 @@ export const defaultTheme = createTheme({
       alignContent: "center",
     },
     body1: {
-      color: "#ffffff",
+      color: "black",
     },
     body2: {
-      color: "#ffffff",
+      color: "black",
     },
   },
 });
