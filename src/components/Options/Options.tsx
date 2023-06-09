@@ -1,70 +1,38 @@
-import { useState } from "react";
-import {
-  Box,
-  Button,
-  FormControl,
-  InputLabel,
-  MenuItem,
-  Select,
-  SelectChangeEvent,
-  Typography,
-} from "@mui/material";
+import { Box, Button, FormControl, TextField } from "@mui/material";
 
-const Options = () => {
-  const [uf, setUf] = useState("");
-  const [city, setCity] = useState("");
+type OptionParams = {
+  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  handleClick: () => void;
+};
 
-  const changeUf = (event: SelectChangeEvent) => {
-    setUf(event.target.value);
-  };
-
-  const changeCity = (event: SelectChangeEvent) => {
-    setCity(event.target.value);
-  };
-
-  const search = (): void => {
-    console.log("Teste");
+export const Options = ({ handleChange, handleClick }: OptionParams) => {
+  const handleKeyDown = (event: { key: string }) => {
+    if (event.key === "Enter") {
+      handleClick();
+    }
   };
 
   return (
-    <Box sx={{ display: "grid", margin: 2, rowGap: 2 }}>
+    <Box display="flex" flexDirection="column" width="314px" rowGap={2}>
       <FormControl>
-        <InputLabel>Estado</InputLabel>
-        <Select
+        <TextField
           fullWidth
-          value={uf}
-          label="Estado"
-          onChange={changeUf}
-          sx={{ background: "#ffffff" }}
-        >
-          <MenuItem value="">
-            <em>Selecione o Estado</em>
-          </MenuItem>
-          <MenuItem value="SP">SP</MenuItem>
-        </Select>
+          onKeyDown={handleKeyDown}
+          label={<b>Insira sua cidade</b>}
+          onChange={handleChange}
+          variant="filled"
+          color="secondary"
+          sx={{
+            backgroundColor: "#FFFFFF",
+            fontWeight: "bold",
+            borderRadius: "8px",
+            color: "black",
+          }}
+        />
       </FormControl>
-      <FormControl>
-        <InputLabel>Cidade</InputLabel>
-        <Select
-          fullWidth
-          value={city}
-          label="Cidade"
-          onChange={changeCity}
-          sx={{ background: "#ffffff" }}
-        >
-          <MenuItem value="">
-            <em>Selecione a Cidade</em>
-          </MenuItem>
-          <MenuItem value="São José dos Campos">São José dos Campos</MenuItem>
-          <MenuItem value="São Paulo">São Paulo</MenuItem>
-          <MenuItem value="Santos">Santos</MenuItem>
-        </Select>
-      </FormControl>
-      <Button variant="contained" onClick={search}>
+      <Button variant="contained" onClick={handleClick}>
         Procurar
       </Button>
     </Box>
   );
 };
-
-export default Options;

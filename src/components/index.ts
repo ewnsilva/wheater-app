@@ -1,2 +1,2 @@
-export { default as Options } from "./Options";
-export { default as Search } from "./Search";
+export { Options } from "./Options";
+export { Search } from "./Search";
