@@ -60,16 +60,15 @@ cd weather-app
 npm install
 ```
 
-<br />
+<p align='justify'>
 O comando “git clone” é utilizado para realizar uma cópia do projeto para o seu computador pessoal. A seguir vêm o comando “cd weather-app” que serve para levar o terminal na pasta que contêm o projeto, e o “npm install” é um comando do Node.js responsável por instalar no seu computador todas os arquivos que o aplicativo depende para funcionar da maneira correta (dependências). Após executar o “npm install”, deve aguardar até que o processo seja finalizado.
-
-</br>
+</p>
+<p align='justify'>
 Após isso, poderá utilizar o comando “code .” dentro do diretório que o aplicativo se encontra, onde o diretório será aberto com o VS Code para que seja possível a visualização da parte de desenvolvimento.
-
-</br>
+</p>
+<p align='justify'>
 Caso desejar iniciar a aplicação, só utilizar o comando “npm start” que o aplicativo será executado e automaticamente será aberto o navegador web padrão do seu computador com a aplicação sendo executada. Após este comando, o terminal irá notificar que a aplicação está rodando com sucesso, exibindo a porta a ser acessada pelo navegador para utilizar a aplicação. Caso desejar encerrar a aplicação, o comando a ser utilizado é o Ctrl+C. Depois é só pressionar a tecla “S” e depois apertar “Enter”.
-
-</div>
+</p>
 </br>
 <h3>Link de APIs utilizadas:</h3>
 <div align='justify'>
