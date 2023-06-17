@@ -1,7 +1,78 @@
-# Wheather App
+<div align='center'>
+<h1> :partly_sunny: Weather App :partly_sunny: </h1>
+</div>
+<div align='justify'>
+O projeto em questão trata-se de um aplicativo para verificar a atual temperatura de uma cidade correspondente ao que foi escrito pelopelo usuário.
+</div>
+<br />
+<div align='justify'>
+A confecção deste aplicativo tem como objetivo apreender e melhorar o uso da tecnologia Typescript, acompanhado das bibliotecas React, Material UI e Axios.
+</div>
+<br />
+<h2>:computer: Sobre</h2>
+<br />
+<div align='justify'>
+O aplicativo forncece a atual temperatura da cidade digitado pelo usuário no campo mostrado abaixo do titulo principal, exibindo o valor em graus celcius (°C) juntamente com uma imagem ilustrativa referente ao clima da região. 
+</div>
+<br />
+<div align='center'>
+<img src='https://github.com/ewnsilva/weather-app/assets/83819706/2f9eef59-ced2-4d8d-b9b7-dd6558e76165' height='400px'>
+<img src='https://github.com/ewnsilva/weather-app/assets/83819706/4ef694fc-0437-4d2b-8a73-0bab0db97b6d' height='400px'>
+<img src='https://github.com/ewnsilva/weather-app/assets/83819706/ebe6cdfe-74fb-4717-a067-9c5f29d41aa3' height='400px'>
+</div>
+<br />
+<div align='justify'>
+Enquanto o resultado é carregado, é apresentado uma animação uma animação , encerrada quando a requisição for conclúida. A aplicação possuí responsividade, podendo ser utilizada não só em celulares, como também tablets e também em computadores, conforme mostrado nas imagens abaixo: 
+</div>
+<br />
+<div align='center'>
+Tablet
+<br />
+<img src='https://github.com/ewnsilva/weather-app/assets/83819706/9165bd51-983f-427f-8e3e-aec3ef8ca193' height='400px'>
+<br />
+Computador
+<br />
+<img src='https://github.com/ewnsilva/weather-app/assets/83819706/a65e8bb8-4ece-4f65-8df8-fe607b40304c' height='400px'>
+</div>
 
-O projeto em questão trata-se de um aplicativo para verificar a previsão de tempo de uma cidade brasileira selecionada pelo usuário.
+<h2>:hammer_and_wrench: Instalação</h2>
 
-A confecção deste aplicativo tem como objetivo apreender e melhorar o uso das tecnologias Typescript, acompanhado das bibliotecas React, Material UI e Axios.
+<div align='justify'>
+Para acessar este aplicativo, o usuário deverá possuir em seu computador pessoal as seguintes ferramentas instaladas:
 
-Atualmente o projeto se encontra em fase de desenvolvimento.
+- Navegador de Internet (Ex: Microsoft Edge, Google Chrome);
+- Visual Studio Code (Caso desejar ver o código);
+- Git;
+- Node.js.
+
+Após instalar estas ferramentas, o terminal do seu sistema, e utilize o seguinte:
+<br />
+
+```
+git clone https://github.com/ewnsilva/weather-app.git
+```
+
+```
+cd weather-app
+```
+
+```
+npm install
+```
+
+<br />
+O comando “git clone” é utilizado para realizar uma cópia do projeto para o seu computador pessoal. A seguir vêm o comando “cd season_shop_react” que serve para levar o terminal na pasta que contêm o projeto, e o “npm install” é um comando do Node.js responsável por instalar no seu computador todas os arquivos que o aplicativo depende para funcionar da maneira correta (dependências). Após executar o “npm install”, deve aguardar até que o processo seja finalizado.
+
+Após isso, poderá utilizar o comando “code .” dentro do diretório que o aplicativo se encontra, onde o diretório será aberto com o VS Code para que seja possível a visualização da parte de desenvolvimento.
+
+Caso desejar iniciar a aplicação, só utilizar o comando “npm start” que o aplicativo será executado e automaticamente será aberto o navegador web padrão do seu computador com a aplicação sendo executada. Após este comando, o terminal do seu sistema ficará semelhante a figura abaixo. Caso desejar encerrar a aplicação, o comando a ser utilizado é p Ctrl+C. Depois é só pressionar a tecla “S” e depois apertar “Enter”.
+
+</div>
+</br>
+<h3>Link de APIs utilizadas:</h3>
+<div align='justify'>
+
+- https://open-meteo.com/
+- https://nominatim.openstreetmap.org/ui/search.html
+
+</div>
