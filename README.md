@@ -2,7 +2,7 @@
 <h1> :partly_sunny: Weather App :partly_sunny: </h1>
 </div>
 <div align='justify'>
-O projeto em questão trata-se de um aplicativo para verificar a atual temperatura de uma cidade correspondente ao que foi escrito pelopelo usuário.
+O projeto em questão trata-se de um aplicativo para verificar a atual temperatura de uma cidade correspondente ao que foi escrito pelo usuário.
 </div>
 <br />
 <div align='justify'>
@@ -12,7 +12,7 @@ A confecção deste aplicativo tem como objetivo apreender e melhorar o uso da t
 <h2>:computer: Sobre</h2>
 <br />
 <div align='justify'>
-O aplicativo forncece a atual temperatura da cidade digitado pelo usuário no campo mostrado abaixo do titulo principal, exibindo o valor em graus celcius (°C) juntamente com uma imagem ilustrativa referente ao clima da região. 
+O aplicativo fornece a atual temperatura da cidade digitado pelo usuário no campo mostrado abaixo do título principal, exibindo o valor em graus celsius (°C) juntamente com uma imagem ilustrativa referente ao clima da região.  
 </div>
 <br />
 <div align='center'>
@@ -22,7 +22,7 @@ O aplicativo forncece a atual temperatura da cidade digitado pelo usuário no ca
 </div>
 <br />
 <div align='justify'>
-Enquanto o resultado é carregado, é apresentado uma animação uma animação , encerrada quando a requisição for conclúida. A aplicação possuí responsividade, podendo ser utilizada não só em celulares, como também tablets e também em computadores, conforme mostrado nas imagens abaixo: 
+Enquanto o resultado é gerado pelo aplicativo, é apresentado uma animação de carregamento que é encerrada quando a requisição for concluída. A aplicação possuí responsividade, podendo ser utilizada não só em celulares, como também tablets e em computadores, conforme mostrado nas imagens abaixo:  
 </div>
 <br />
 <div align='center'>
