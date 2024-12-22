@@ -21,7 +21,8 @@ const Search = ({
       justifyContent="center"
       justifySelf="center"
       sx={{
-        border: "2px solid white",
+        border: "2px solid",
+        borderColor: 'primary.main',
         borderRadius: "8px",
         width: 310,
         height: 300,
